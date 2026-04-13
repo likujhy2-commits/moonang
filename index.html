@@ -1,14 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>대한민국 맛집 지도</title>
+  <link href="/style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <!-- 헤더 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍽️</span>
+        <span class="logo-text">대한민국 맛집 지도</span>
+      </div>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="맛집 이름, 음식 종류 검색...">
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 지역 탭 -->
+  <nav class="region-nav">
+    <div class="region-nav-inner">
+      <button class="region-btn active" data-region="all">
+        <span class="region-emoji">🗺️</span>
+        <span>전체</span>
+      </button>
+      <button class="region-btn" data-region="seoul">
+        <span class="region-emoji">🏙️</span>
+        <span>서울</span>
+      </button>
+      <button class="region-btn" data-region="metro">
+        <span class="region-emoji">🌆</span>
+        <span>광역시</span>
+      </button>
+      <button class="region-btn" data-region="jeolla">
+        <span class="region-emoji">🌾</span>
+        <span>전라도</span>
+      </button>
+      <button class="region-btn" data-region="gyeongsan">
+        <span class="region-emoji">⛰️</span>
+        <span>경상도</span>
+      </button>
+      <button class="region-btn" data-region="gangwon">
+        <span class="region-emoji">🏔️</span>
+        <span>강원도</span>
+      </button>
+      <button class="region-btn" data-region="jeju">
+        <span class="region-emoji">🌊</span>
+        <span>제주도</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 서브 필터 (광역시용) -->
+  <div class="metro-filter" id="metroFilter">
+    <div class="metro-filter-inner">
+      <button class="metro-btn active" data-metro="all">전체</button>
+      <button class="metro-btn" data-metro="busan">부산</button>
+      <button class="metro-btn" data-metro="incheon">인천</button>
+      <button class="metro-btn" data-metro="daegu">대구</button>
+      <button class="metro-btn" data-metro="daejeon">대전</button>
+      <button class="metro-btn" data-metro="gwangju">광주</button>
+      <button class="metro-btn" data-metro="ulsan">울산</button>
+    </div>
+  </div>
+
+  <!-- 메인 -->
+  <main class="main-content">
+    <div class="section-title" id="sectionTitle">
+      <h2 id="regionTitle">전체 맛집</h2>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+
+    <div class="card-grid" id="cardGrid"></div>
+
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <div class="empty-icon">🍽️</div>
+      <p>검색 결과가 없습니다</p>
+    </div>
+  </main>
+
+  <!-- 모달 -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 대한민국 맛집 지도 · 맛있는 여행을 떠나보세요</p>
+  </footer>
+
+  <script defer src="/main.js"></script>
 </body>
 </html>
