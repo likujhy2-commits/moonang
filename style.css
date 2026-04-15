@@ -468,6 +468,75 @@ body {
 }
 
 /* ============================
+   카카오맵 링크
+   ============================ */
+.kakao-link {
+  color: #3a86ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.kakao-link:hover { text-decoration: underline; }
+
+/* ============================
+   관리자 모드
+   ============================ */
+.admin-badge {
+  background: #ffe066;
+  color: #7a5c00;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.admin-edit-section {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: #fffbe6;
+  border: 1.5px dashed #f0c040;
+  border-radius: 10px;
+}
+.admin-edit-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a5c00;
+  margin-bottom: 8px;
+}
+.admin-edit-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.admin-rating-input {
+  width: 90px;
+  padding: 7px 10px;
+  border: 1.5px solid #f0c040;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.admin-save-btn {
+  background: #f0c040;
+  color: #7a5c00;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+.admin-save-btn:hover { background: #e0b020; }
+.naver-check-link {
+  font-size: 12px;
+  color: #03c75a;
+  text-decoration: none;
+  font-weight: 600;
+}
+.naver-check-link:hover { text-decoration: underline; }
+
+/* ============================
    반응형
    ============================ */
 @media (max-width: 600px) {

@@ -301,7 +301,269 @@ const restaurants = [
     address: '제주 서귀포시 서문로 30', hours: '11:30 – 21:00', price: '18,000원~',
     menu: '갈치조림, 갈치구이, 갈치국',
   },
+
+  // ===== 여수 추가 =====
+  {
+    id: 37, region: 'jeolla', regionLabel: '여수',
+    city: '', name: '광장국밥', category: '국밥', emoji: '🥣',
+    rating: 4.6,
+    desc: '여수 이순신광장 인근 로컬 국밥 명소. 진하고 구수한 국물에 든든한 한 끼.',
+    address: '전남 여수시 통제영5길 3 1층', hours: '07:00 – 21:00', price: '8,000원~',
+    menu: '국밥, 순대국밥',
+  },
+  {
+    id: 38, region: 'jeolla', regionLabel: '여수',
+    city: '', name: '광장서대회', category: '해산물', emoji: '🐟',
+    rating: 4.7,
+    desc: '여수 명물 서대회무침 전문점. 새콤달콤하게 무친 서대회는 여수 여행의 필수 코스.',
+    address: '전남 여수시 이순신광장로 196 1층', hours: '11:00 – 21:00', price: '15,000원~',
+    menu: '서대회무침, 서대구이',
+  },
+  {
+    id: 39, region: 'jeolla', regionLabel: '여수',
+    city: '', name: '돌문어상회', category: '해산물', emoji: '🐙',
+    rating: 4.7,
+    desc: '여수 앞바다 신선한 돌문어 전문점. 탱탱하고 쫄깃한 돌문어숙회와 볶음이 일품.',
+    address: '전남 여수시 하멜로 80 1-2층', hours: '11:30 – 22:00', price: '20,000원~',
+    menu: '돌문어숙회, 돌문어볶음, 돌문어라면',
+  },
+  {
+    id: 40, region: 'jeolla', regionLabel: '여수',
+    city: '', name: '깨비게장', category: '게장', emoji: '🦀',
+    rating: 4.8,
+    desc: '여수식 게장 전문점. 간장게장과 양념게장이 함께 나오는 밥 도둑 한상.',
+    address: '전남 여수시 봉산남3길 23-8 1-2층', hours: '11:00 – 21:00', price: '15,000원~',
+    menu: '간장게장, 양념게장, 게장백반',
+  },
+  {
+    id: 41, region: 'jeolla', regionLabel: '여수',
+    city: '', name: '황가네하모', category: '해산물', emoji: '🐟',
+    rating: 4.7,
+    desc: '여수 특산 하모(갯장어) 전문 맛집. 하모 사시미와 샤브샤브가 대표 메뉴로 여름철 별미.',
+    address: '전남 여수시 남산남1길 20-1', hours: '11:00 – 21:30', price: '25,000원~',
+    menu: '하모사시미, 하모샤브샤브, 하모구이',
+  },
+
+  // ===== 전주 추가 =====
+  {
+    id: 42, region: 'jeolla', regionLabel: '전주',
+    city: '', name: '조점례남문피순대', category: '순대', emoji: '🫕',
+    rating: 4.8,
+    desc: '전주 남문시장 대표 순대 명가. 오랜 전통의 피순대와 순대국밥은 전주 여행 필수 먹거리.',
+    address: '전북특별자치도 전주시 완산구 풍남문2길 39', hours: '09:00 – 20:00', price: '7,000원~',
+    menu: '피순대, 순대국밥, 모둠순대',
+  },
+  {
+    id: 43, region: 'jeolla', regionLabel: '전주',
+    city: '', name: '전주왱이콩나물국밥', category: '해장국', emoji: '🥣',
+    rating: 4.7,
+    desc: '전주식 콩나물국밥의 정통 맛집. 아삭한 콩나물에 날계란을 넣어 비벼 먹는 전주식 아침 밥상.',
+    address: '전북특별자치도 전주시 완산구 동문길 88 1층', hours: '07:00 – 21:00', price: '8,000원~',
+    menu: '콩나물국밥, 모둠국밥',
+  },
+  {
+    id: 44, region: 'jeolla', regionLabel: '전주',
+    city: '', name: '고속반점', category: '중식', emoji: '🍜',
+    rating: 4.6,
+    desc: '전주 금암동의 오래된 중국 음식점. 구수하고 진한 자장면과 짬뽕이 현지인들에게 오래 사랑받는 로컬 맛집.',
+    address: '전북특별자치도 전주시 덕진구 용산1길 12', hours: '11:00 – 21:00', price: '7,000원~',
+    menu: '자장면, 짬뽕, 탕수육',
+  },
+  {
+    id: 45, region: 'jeolla', regionLabel: '전주',
+    city: '', name: '훈희국수', category: '국수', emoji: '🍜',
+    rating: 4.5,
+    desc: '전주 우아동의 소박한 잔치국수 집. 깔끔한 멸치 육수에 쫄깃한 면발이 어우러진 정겨운 한 그릇.',
+    address: '전북 전주시 덕진구 우아8길 8 1층', hours: '11:00 – 20:00', price: '5,000원~',
+    menu: '잔치국수, 비빔국수, 만두',
+  },
+
+  // ===== 목포 추가 =====
+  {
+    id: 46, region: 'jeolla', regionLabel: '목포',
+    city: '', name: '해빔 목포본점', category: '해산물', emoji: '🦑',
+    rating: 4.7,
+    desc: '목포 미항 근처 신선한 해산물 한상. 낙지·꽃게·갑오징어 등 다양한 서해 해산물을 즐길 수 있는 목포 인기 맛집.',
+    address: '전남 목포시 미항로 83 1층', hours: '11:00 – 21:30', price: '25,000원~',
+    menu: '해산물모둠, 낙지볶음, 꽃게탕',
+  },
+  {
+    id: 47, region: 'jeolla', regionLabel: '목포',
+    city: '', name: '백성식당', category: '한식', emoji: '🍽️',
+    rating: 4.5,
+    desc: '목포 현지인이 즐겨 찾는 백반 식당. 푸짐한 반찬과 함께 나오는 정갈한 남도식 밥상.',
+    address: '전남 목포시 번화로 68', hours: '08:00 – 21:00', price: '10,000원~',
+    menu: '백반, 생선조림, 제육볶음',
+  },
+
+  // ===== 광양 추가 =====
+  {
+    id: 48, region: 'jeolla', regionLabel: '광양',
+    city: '', name: '장원회관', category: '불고기', emoji: '🥩',
+    rating: 4.8,
+    desc: '광양 전통 숯불 불고기의 명가. 참나무 숯불에 구워 먹는 광양식 불고기는 전국 3대 불고기 중 하나.',
+    address: '전남 광양시 광양읍 매천로 821-5', hours: '11:00 – 21:30', price: '15,000원~',
+    menu: '광양불고기, 불고기전골, 된장찌개',
+  },
+  {
+    id: 49, region: 'jeolla', regionLabel: '광양',
+    city: '', name: '진선 재첩식당', category: '재첩요리', emoji: '🦪',
+    rating: 4.6,
+    desc: '섬진강 재첩의 정취를 담은 재첩 전문점. 시원한 재첩국과 새콤한 재첩회무침이 입맛을 살린다.',
+    address: '전남 광양시 진월면 선소중앙길 43 1층', hours: '10:00 – 20:00', price: '12,000원~',
+    menu: '재첩국, 재첩회무침, 재첩비빔밥',
+  },
+
+  // ===== 순천 추가 =====
+  {
+    id: 50, region: 'jeolla', regionLabel: '순천',
+    city: '', name: '금수저', category: '백반', emoji: '🍱',
+    rating: 4.6,
+    desc: '순천 연향동의 정갈한 백반 식당. 매일 바뀌는 반찬과 함께 정성스럽게 차려지는 가정식 밥상.',
+    address: '전남 순천시 도장길 11', hours: '11:00 – 20:00', price: '10,000원~',
+    menu: '한상차림백반, 갈치조림, 생선구이',
+  },
+  {
+    id: 51, region: 'jeolla', regionLabel: '순천',
+    city: '', name: '거시기식당', category: '한식', emoji: '🍽️',
+    rating: 4.5,
+    desc: '순천의 정겨운 남도 밥집. 갖은 나물과 남도식 밑반찬이 한가득 펼쳐지는 소박한 밥상.',
+    address: '전남 순천시 저전길 15', hours: '11:00 – 20:30', price: '9,000원~',
+    menu: '백반, 비빔밥, 순대국',
+  },
+
+  // ===== 군산 추가 =====
+  {
+    id: 52, region: 'jeolla', regionLabel: '군산',
+    city: '', name: '이성당', category: '베이커리', emoji: '🍞',
+    rating: 4.9,
+    desc: '1945년 창업, 한국에서 가장 오래된 빵집. 팥앙금이 가득한 단팥빵과 야채빵이 대표 메뉴. 군산 여행 필수 코스.',
+    address: '전북 군산시 중앙로 177', hours: '08:00 – 22:00', price: '1,500원~',
+    menu: '단팥빵, 야채빵, 크림빵',
+  },
+  {
+    id: 53, region: 'jeolla', regionLabel: '군산',
+    city: '', name: '순희네생선집', category: '생선요리', emoji: '🐟',
+    rating: 4.7,
+    desc: '군산 월명동의 인기 생선 구이 집. 신선한 생선을 숯불에 구워내는 고소하고 담백한 맛이 일품.',
+    address: '전북특별자치도 군산시 구영5길 41 1층', hours: '11:00 – 21:00', price: '12,000원~',
+    menu: '생선구이, 생선조림, 백반',
+  },
+
+  // ===== 익산 추가 =====
+  {
+    id: 54, region: 'jeolla', regionLabel: '익산',
+    city: '', name: '진희닭도리탕', category: '닭요리', emoji: '🍗',
+    rating: 4.6,
+    desc: '익산 중앙로의 매콤한 닭도리탕 명가. 푸짐한 양에 칼칼한 양념이 밥 한 그릇 뚝딱하게 만드는 로컬 맛집.',
+    address: '전북특별자치도 익산시 중앙로 22-34 1층', hours: '11:00 – 21:00', price: '35,000원~(2인)',
+    menu: '닭도리탕, 닭볶음',
+  },
+
+  // ===== 기타 전라도 =====
+  {
+    id: 55, region: 'jeolla', regionLabel: '함평',
+    city: '', name: '전주식당 (함평 육사시미)', category: '육회', emoji: '🥩',
+    rating: 4.7,
+    desc: '함평의 숨겨진 보물. 신선한 한우 육사시미(육회)를 전문으로 하며 함평 한우의 진한 맛을 느낄 수 있다.',
+    address: '전남 함평군 함평읍 신기산길 22', hours: '11:00 – 21:00', price: '20,000원~',
+    menu: '육사시미, 육회비빔밥, 한우구이',
+  },
+  {
+    id: 56, region: 'jeolla', regionLabel: '영광',
+    city: '', name: '한성식당', category: '해산물', emoji: '🍲',
+    rating: 4.7,
+    desc: '영광 백수해안도로 인근 백합죽 명가. 서해 갯벌의 싱싱한 백합으로 끓인 고소하고 시원한 죽.',
+    address: '전남 영광군 백수읍 천마길 12 1층', hours: '09:00 – 20:00', price: '12,000원~',
+    menu: '백합죽, 백합탕, 백합무침',
+  },
+  {
+    id: 57, region: 'jeolla', regionLabel: '영광',
+    city: '', name: '놀부네', category: '생선요리', emoji: '🐟',
+    rating: 4.6,
+    desc: '영광 덕자(병어) 조림의 명가. 달고 고소한 덕자조림은 영광에서만 맛볼 수 있는 특별한 향토 음식.',
+    address: '전남 영광군 영광읍 천년로11길 26-1 1층', hours: '11:00 – 21:00', price: '15,000원~',
+    menu: '덕자조림, 덕자구이, 백반',
+  },
+  {
+    id: 58, region: 'jeolla', regionLabel: '담양',
+    city: '', name: '목화식당', category: '한식', emoji: '🌿',
+    rating: 4.5,
+    desc: '담양의 정겨운 로컬 한식당. 담양 특산물을 활용한 남도식 정갈한 밥상을 선보이는 현지인 단골 식당.',
+    address: '전남 담양군 담양읍 천변5길 3', hours: '11:00 – 21:00', price: '10,000원~',
+    menu: '한정식, 죽순요리, 백반',
+  },
+
+  // ===== 광주 추가 (광역시) =====
+  {
+    id: 59, region: 'metro', regionLabel: '광주', city: 'gwangju',
+    name: '엄마네돼지찌개', category: '찌개', emoji: '🍲',
+    rating: 4.7,
+    desc: '광주 동구 문화전당 인근 돼지찌개 전문점. 진하고 칼칼한 국물에 부드러운 돼지고기가 어우러진 광주 로컬 맛집.',
+    address: '광주 동구 문화전당로23번길 33 1층', hours: '11:00 – 21:00', price: '8,000원~',
+    menu: '돼지찌개, 두루치기, 제육볶음',
+  },
+  {
+    id: 60, region: 'metro', regionLabel: '광주', city: 'gwangju',
+    name: '골메골', category: '찌개', emoji: '🥘',
+    rating: 4.6,
+    desc: '광주 광산구의 애호박찌개 전문점. 구수하고 담백한 애호박찌개는 광주 현지인들이 즐겨 찾는 향토 음식.',
+    address: '광주 광산구 평동로 424 1층', hours: '11:00 – 21:00', price: '8,000원~',
+    menu: '애호박찌개, 된장찌개, 백반',
+  },
+  {
+    id: 61, region: 'metro', regionLabel: '광주', city: 'gwangju',
+    name: '원조두유', category: '두부/두유', emoji: '🥛',
+    rating: 4.5,
+    desc: '광주 산수동의 전통 두유 전문점. 국산 콩으로 만든 고소한 두유와 두부요리로 건강한 한 끼.',
+    address: '광주 동구 무등로 513-2', hours: '08:00 – 20:00', price: '5,000원~',
+    menu: '두유, 순두부, 콩국수',
+  },
 ];
+
+// ==============================
+// 카카오 로컬 API
+// ==============================
+const KAKAO_REST_API_KEY = 'YOUR_KAKAO_REST_API_KEY'; // 카카오 REST API 키 입력
+
+async function fetchKakaoPlace(name, address) {
+  const fallbackUrl = `https://map.kakao.com/?q=${encodeURIComponent(name)}`;
+  if (KAKAO_REST_API_KEY === 'YOUR_KAKAO_REST_API_KEY') {
+    return { place_url: fallbackUrl, place_name: name };
+  }
+  try {
+    const q = encodeURIComponent(`${name} ${address}`);
+    const res = await fetch(
+      `https://dapi.kakao.com/v2/local/search/keyword.json?query=${q}&size=1`,
+      { headers: { Authorization: `KakaoAK ${KAKAO_REST_API_KEY}` } }
+    );
+    const data = await res.json();
+    if (data.documents?.[0]) return data.documents[0];
+  } catch {}
+  return { place_url: fallbackUrl, place_name: name };
+}
+
+// ==============================
+// 평점 직접 관리 (localStorage)
+// ==============================
+function getRatingOverrides() {
+  try { return JSON.parse(localStorage.getItem('matzip_ratings') || '{}'); }
+  catch { return {}; }
+}
+
+function saveRatingOverride(id, rating) {
+  const o = getRatingOverrides();
+  o[id] = parseFloat(rating);
+  localStorage.setItem('matzip_ratings', JSON.stringify(o));
+}
+
+function getEffectiveRating(r) {
+  const o = getRatingOverrides();
+  return o[r.id] !== undefined ? o[r.id] : r.rating;
+}
+
+// 관리자 모드: URL에 ?admin=1 추가
+let isAdmin = new URLSearchParams(location.search).has('admin');
 
 // ==============================
 // 상태
@@ -351,6 +613,14 @@ function renderStars(rating) {
   return `<span class="card-rating">${stars} ${rating.toFixed(1)}</span>`;
 }
 
+function renderAdminBadge(id) {
+  const o = getRatingOverrides();
+  const isOverridden = o[id] !== undefined;
+  return isAdmin
+    ? `<span class="admin-badge">${isOverridden ? '✏️ 수정됨' : '➕ 미입력'}</span>`
+    : '';
+}
+
 // ==============================
 // 카드 렌더
 // ==============================
@@ -372,33 +642,47 @@ function renderCards() {
   }
 
   empty.style.display = 'none';
-  grid.innerHTML = filtered.map(r => `
+  grid.innerHTML = filtered.map(r => {
+    const rating = getEffectiveRating(r);
+    return `
     <article class="restaurant-card" onclick="openModal(${r.id})">
       <div class="card-thumb">${r.emoji}</div>
       <div class="card-body">
         <div class="card-tags">
           <span class="tag tag-region">${r.regionLabel}</span>
           <span class="tag tag-category">${r.category}</span>
+          ${renderAdminBadge(r.id)}
         </div>
         <h3 class="card-name">${r.name}</h3>
         <p class="card-desc">${r.desc}</p>
         <div class="card-footer">
-          ${renderStars(r.rating)}
+          ${renderStars(rating)}
           <span class="card-addr">${r.address}</span>
         </div>
       </div>
     </article>
-  `).join('');
+  `;
+  }).join('');
 }
 
 // ==============================
 // 모달
 // ==============================
-function openModal(id) {
-  const r = restaurants.find(x => x.id === id);
-  if (!r) return;
+function renderModalContent(r, kakaoUrl) {
+  const rating = getEffectiveRating(r);
+  const adminSection = isAdmin ? `
+    <div class="admin-edit-section">
+      <label class="admin-edit-label">📝 네이버 평점 직접 입력 (네이버지도 확인 후 입력)</label>
+      <div class="admin-edit-row">
+        <input type="number" id="adminRatingInput" class="admin-rating-input"
+          min="0" max="5" step="0.1" value="${rating.toFixed(1)}" placeholder="0.0 ~ 5.0">
+        <button class="admin-save-btn" onclick="saveAdminRating(${r.id})">저장</button>
+      </div>
+      <a href="https://map.naver.com/v5/search/${encodeURIComponent(r.name)}" target="_blank" class="naver-check-link">네이버지도에서 평점 확인 →</a>
+    </div>
+  ` : '';
 
-  document.getElementById('modalBody').innerHTML = `
+  return `
     <div class="modal-thumb">${r.emoji}</div>
     <div class="modal-info">
       <div class="modal-tags">
@@ -406,7 +690,7 @@ function openModal(id) {
         <span class="tag tag-category">${r.category}</span>
       </div>
       <h2 class="modal-name">${r.name}</h2>
-      <div class="modal-rating">★ ${r.rating.toFixed(1)} / 5.0</div>
+      <div class="modal-rating">★ ${rating.toFixed(1)} / 5.0</div>
       <p class="modal-desc">${r.desc}</p>
       <div class="modal-details">
         <div class="modal-detail-row">
@@ -429,11 +713,43 @@ function openModal(id) {
           <span class="modal-detail-label">대표메뉴</span>
           <span class="modal-detail-value">${r.menu}</span>
         </div>
+        <div class="modal-detail-row">
+          <span class="modal-detail-icon">🗺️</span>
+          <span class="modal-detail-label">카카오맵</span>
+          <span class="modal-detail-value"><a href="${kakaoUrl}" target="_blank" class="kakao-link">카카오맵에서 보기 →</a></span>
+        </div>
       </div>
+      ${adminSection}
     </div>
   `;
+}
 
+async function openModal(id) {
+  const r = restaurants.find(x => x.id === id);
+  if (!r) return;
+
+  const kakaoFallback = `https://map.kakao.com/?q=${encodeURIComponent(r.name)}`;
+  document.getElementById('modalBody').innerHTML = renderModalContent(r, kakaoFallback);
   document.getElementById('modalOverlay').classList.add('open');
+
+  const place = await fetchKakaoPlace(r.name, r.address);
+  if (place?.place_url) {
+    document.getElementById('modalBody').innerHTML = renderModalContent(r, place.place_url);
+  }
+}
+
+function saveAdminRating(id) {
+  const input = document.getElementById('adminRatingInput');
+  const val = parseFloat(input.value);
+  if (isNaN(val) || val < 0 || val > 5) {
+    alert('0.0 ~ 5.0 사이 숫자를 입력해주세요');
+    return;
+  }
+  saveRatingOverride(id, val);
+  renderCards();
+  const r = restaurants.find(x => x.id === id);
+  document.getElementById('modalBody').innerHTML = renderModalContent(r, `https://map.kakao.com/?q=${encodeURIComponent(r.name)}`);
+  alert(`평점 ${val.toFixed(1)} 저장 완료!`);
 }
 
 function closeModal() {
